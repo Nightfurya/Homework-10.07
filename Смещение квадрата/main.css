@@ -1,0 +1,18 @@
+#test {
+  display: none;
+}
+[for="test"] {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+#test + label {
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  display: block;
+  transition: 2s linear;
+}
+#test:checked + label {
+  transform: translate(80vh, -80vh);
+}

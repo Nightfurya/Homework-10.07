@@ -1,0 +1,39 @@
+div {
+  display: flex;
+  padding: 15px;
+}
+.bar {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+.bar1 {
+  position: absolute;
+  z-index: 2;
+  border: 1px solid blue;
+  background: skyblue;
+  width: 160px;
+  height: 160px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+.bar2 {
+  position: relative;
+  z-index: 1;
+  border: 1px solid blue;
+  background: aquamarine;
+  width: 160px;
+  height: 160px;
+  color: red;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 0px;
+  transition: top 0.5s linear;
+}
+.bar1:hover + .bar2 {
+  top: 160px;
+}

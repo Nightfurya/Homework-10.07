@@ -1,0 +1,28 @@
+div {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block {
+  /* border: 1px solid red; */
+  height: 300px;
+  width: 300px;
+}
+.square {
+  border: 1px solid blue;
+  height: 100px;
+  width: 100px;
+}
+.circle {
+  border: 1px solid green;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  transition: 2s linear;
+}
+.circle:hover {
+  cursor: pointer;
+  transform: scale(5);
+  background: aquamarine;
+}
